@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-Plus">
+  <section class="w-[96%] my-8 py-8 p-7 max-w-[45rem] mx-auto bg-blac rounded-xl shadow-lg space-y-2 sm:py-4 sm:items-center sm:space-y-0">
+
+    <header class="container mb-8">
+        <div class="flex justify-between">
+            <h2 class="text-2xl font-bold text-blue-900">
+              Notifications <span class=" px-3 text-white text-xl border-none rounded-md aspect-auto bg-blue-900" id="notification">3</span>
+            </h2>
+            <p class="text-lg font-bold text-blue-900 cursor-pointer" id="allRead" >
+              Mark all as read
+            </p>
+        </div>
+        <!-- <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/img/erin-lindford.jpg" alt="Woman's Face">
+        <div class="text-center space-y-2 sm:text-left">
+          <div class="space-y-0.5">
+            <p class="text-lg text-black font-semibold">
+              Erin Lindford
+            </p>
+            <p class="text-slate-500 font-medium">
+              Product Engineer
+            </p>
+          </div>
+          <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" id="btn">Message</button>
+        </div> -->
+      </header>
+
+      <main class="flex flex-col gap-2">
+  
+        <div class="flex bg-blue-50 py-3 px-2" id="mark">
+          <img 
+            class="w-12 mx-4"
+            src="img/avatar-mark-webber.webp" alt="avatar">
+          <div>
+            <p>
+              <strong>Mark Webber </strong>reacted to your recent post <b>My first tournament today!</b>
+            </p>
+            <p>1m ago</p>
+          </div>
+        </div>
+  
+        <div class="flex bg-blue-50 py-3 px-2" id="angela">
+          <img 
+            class="w-12 mx-4"
+            src="img/avatar-angela-gray.webp" alt="avatar">
+          <div>
+            <p>
+              <strong>Angela Gray </strong>followed you </p>
+            <p>5m ago</p>
+          </div>
+        </div>
+  
+        <div class="flex bg-blue-50 py-3 px-2" id="jacob">
+          <img 
+            class="w-12 mx-4"
+            src="img/avatar-jacob-thompson.webp" alt="avatar">
+          <div>
+            <p>
+              <strong>Jacob Thompson </strong>has joined your group <b class="text-blue-900">Chess Club</b>
+            </p>
+            <p>1day ago</p>
+          </div>
+        </div>
+  
+        <div>
+
+          <div class="flex py-3 px-2" id="rizky">
+            <img 
+              class="w-12 mx-4 object-contain h-1/2"
+              src="img/avatar-rizky-hasanuddin.webp" alt="avatar">
+            <div class="flex flex-col">
+              <div>
+                <p>
+                  <strong>Rizky Hasanuddin </strong>sent you a private message
+                </p>
+                <p>5 days ago</p>
+              </div>
+              <div class="border py-4 px-5 my-5 mr-4 hidden" id="hide">
+                <p>
+                  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                  I'm already having lots of fun and improving my game.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flex justify-between py-3 px-2">
+          <div class="flex">
+            <img 
+              class="w-12 mx-4"
+              src="img/avatar-kimberly-smith.webp" alt="avatar">
+            <div class="">
+              <p>
+                <strong>Kimberly Smith </strong>commented on your picture
+              </p>
+              <p>1week ago</p>
+            </div>
+          </div>
+            <div class="">
+              <img 
+                class="w-12 flex justify-items-end mr-4"
+                src="img/image-chess.webp" alt="avatar">
+            </div>
+        </div>
+  
+        <div class="flex py-3 px-2">
+          <img 
+            class="w-12 mx-4 pb-5"
+            src="img/avatar-nathan-peterson.webp" alt="avatar">
+          <div>
+            <p>
+              <strong>Nathan Peterson </strong>reacted to your recent post <b>5 end-game strategies to increase your win rate</b>
+            </p>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+  
+        <div class="flex py-3 px-2">
+          <img 
+            class="w-12 mx-4"
+            src="img/avatar-anna-kim.webp" alt="avatar">
+          <div>
+            <p><strong>Anna Kim </strong>left the group <b class="text-blue-900">Chess Club</b></p>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+      </main>
+      
+    </section>
+</body>
+
+<script src="js/index.js">
+</script>
+</html>
